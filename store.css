@@ -1,0 +1,259 @@
+body{
+    height: 1000px;
+    overflow-x: hidden;
+   
+}
+
+
+.bg-img{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+   z-index: -1;
+}
+
+.logo {
+    font-family:'Gloria Hallelujah';
+    color: #618583;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+.navbar-nav > li > a:hover {
+    font-size: 15px;
+    color: #618583 !important;
+  }
+  
+  
+  
+  .nav-link {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #c4839c !important;
+  }
+  
+  .navbar-nav li {
+    padding: 0px 25px 0px 25px;
+  }
+
+  .navbar {
+   
+    margin-right: 200px;
+    margin-left: 510px;
+       
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #dedfbf;
+    background-color: #fff;
+    justify-content: first baseline;
+    display: flex;
+  }
+  
+  .brand-name {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    margin-right: 400px;
+    margin-top: 140px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 200px;
+    color: #c4839c;
+  }
+  
+  .h4-text {
+    display: flex;
+    justify-content: end;
+    
+    margin-right: 100px;
+    font-family: 'Gloria Hallelujah';
+    font-size: 30px;
+    font-weight: 200px;
+    color: #618583;
+    margin-top: 60px;
+  }
+  
+  .search-container {
+   margin-top: 20px;
+   margin-right: 5px;
+   text-align: center;
+    justify-content: end;
+    height: 100vh;
+  }
+  .search-input {
+    border: none;
+    border-radius: 50px 0 0 50px;
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    outline: none;
+  }
+  .search-button {
+    background-color: #618583;
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .search-button:hover {
+    background-color: #4c706e;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+
+  
+ .font1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+
+ .jumbotron {
+  background-image: url(./images/Untitled\ design\ \(47\).png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 50px auto;
+  max-width: 1000px;
+  height: 260px;
+}
+
+.display-4{
+  color: #c4839c;
+  font-family: 'Gloria Hallelujah';
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+ margin-top: 50px;
+}
+.jumbotron-2 {
+  background-image: url(./images/Untitled\ design\ \(48\).png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 50px auto;
+  max-width: 1000px;
+  height: 260px;
+}
+
+.jumbotron-3 {
+  background-image: url(./images/Untitled\ design\ \(49\).png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 50px auto;
+  max-width: 1000px;
+  height: 260px;
+}
+
+.jumbotron-4 {
+  background-image: url(./images/Untitled\ design\ \(50\).png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 50px auto;
+  max-width: 1000px;
+  height: 260px;
+}
+
+.display-5{
+  color: #618583;
+  font-family: 'Gloria Hallelujah';
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+ margin-top: 50px;
+}
+
+
+
+
+.custom-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.custom-card .card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.custom-card .card-title {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.custom-card .card-text {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
+
+
+
+.footer {
+    margin-top: 80px;
+    background-image: url(./images/Untitled\ design\ \(43\).png);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+
+.titlu-footer{
+margin-left: 100px;
+margin-top: 20px;
+font-family: 'Gloria Hallelujah';
+    color: #c4839c;
+    padding: 20px 0;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+.paragraf-footer{
+margin-top: 20px;
+font-family: 'Times New Roman', Times, serif;
+    color: #618583;
+   margin-left: 100px;
+    font-size: 17px;
+  
+    text-align: center;
+    align-items: center;
+   
+}
+.social-icon{
+
+padding-left: 210px;
+font-size: 20px;
+}
+
+
