@@ -1,0 +1,195 @@
+/*Navbar*/
+
+body {
+  height: 500px;
+  overflow-x: hidden;
+}
+
+.bg-img {
+  height: 73vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.logo {
+  font-family: "Gloria Hallelujah";
+  color: #618583;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.navbar-nav > li > a:hover {
+  font-size: 15px;
+  color: #618583 !important;
+}
+
+.nav-link {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #c4839c !important;
+}
+
+.navbar-nav li {
+  padding: 0px 25px 0px 25px;
+}
+
+.navbar {
+  margin-right: 300px;
+  margin-left: 300px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0px #358b94;
+  background-color: #fff;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+/* Mesajele din Background */
+
+.cart {
+  text-align: center;
+  padding-bottom: 200px;
+  color: #222465;
+  margin-left: 100px;
+  font-family: "Gloria Hallelujah";
+}
+p {
+  text-align: center;
+  color: #222465;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+#emptyCartMessage {
+  text-align: center;
+  color: #222465;
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+}
+
+/* Stilizarea formularului */
+
+#paymentForm {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px #618583;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 200px;
+  font-family: "Gloria Hallelujah";
+}
+
+.form-label {
+  font-weight: bold;
+  color: #7898d6;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.form-control {
+  border: 2px solid #6164bb;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #6164bb;
+}
+
+/* Stilizare butonul Pay */
+
+.btn-primary {
+  background-color: #6164bb;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 32px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #474f9c;
+}
+
+/* Stilizare pentru Thank you for your order */
+
+#paymentMessage {
+  color: #222465;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form-control:invalid {
+  border-color: #f6eded;
+}
+
+/*Footer*/
+
+.footer {
+  margin-top: 80px;
+  background-image: url("./images/Untitled\ design\ \(43\).png");
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.titlu-footer {
+  margin-left: 100px;
+  margin-top: 20px;
+  font-family: "Gloria Hallelujah";
+  color: #c4839c;
+  padding: 20px 0;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+}
+.paragraf-footer {
+  font-family: "Times New Roman", Times, serif;
+  color: #618583;
+  margin-left: 100px;
+  font-size: 17px;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+}
+.social-icon {
+  padding-left: 210px;
+  font-size: 20px;
+}
+
+/* Stilizare butonul Remove */
+
+.remove-button {
+  display: flex;
+  background-color: #618583;
+  color: white;
+  margin-left: 70px;
+  border: none;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #618583;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.remove-button:hover {
+  background-color: #cddfde;
+}

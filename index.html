@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="index.css">
     <link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" integrity="sha384-u6j+KmM1nOBfKdfo/4xLqJ/t2hL2VX8f4Z9Ur9W2xW2RlC62sKf+S+9xgcUUV6Fv" crossorigin="anonymous">
     
 </head>
 <body>
-    <!-- Navbar -->
+    
+  <!-- Navbar -->
 
    <img class="bg-img" src="./images/Untitled design (3).png" alt="bg">
    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
@@ -23,7 +26,7 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="file:///C:/Users/dragh/Desktop/ItSchool%20PetShop/PetShop/index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="file:///C:/Users/dragh/Desktop/ItSchool%20PetShop/PetShop/store.html">Store</a>
@@ -31,16 +34,28 @@
         <li class="nav-item">
           <a class="nav-link" href="file:///C:/Users/dragh/Desktop/ItSchool%20PetShop/PetShop/contact.html">Contact Us</a>
         </li>
-        
-      </ul>
-    </div>
-    </div>
+
+<!-- btn fav si pay -->
+
+<li class="nav-item">
+  <a class="nav-link" href="favorite.html">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+  </a>
+</li>
+
+
+<li class="nav-item">
+  <a class="nav-link" href="cart.html">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+  </a>
+</li>
+
   </nav>
    <h1 class="brand-name" id="title"><b>Dream about <br> a best friend?</b></h1>
   <h4 class="h4-text" id="subtitle">- You came to the right place -</h4>
   <button type="button" class="btn btn-light">Let's chat</button>
  
-
+<!-- Banner -->
   
   <div class="containere">
     <h1 class="banner"><b>About Us</b></h1>
@@ -104,6 +119,8 @@
 </div>
 
 
+<!-- Carousel -->
+
 <div class="bestseller">
   <h2 class="bestseller">Healthy food for your pet</h2>
 </div>
@@ -117,48 +134,84 @@
                       <div class="card-carousel">
                           <img src="https://pentruanimale.ro/beta/files/product/original/CLUB-4-PAWS-Pui-hrana-uscataa-caini-L-XL-14-kg-11059.jpeg" class="card-img-top" alt="Imagine 1">
                           <div class="card-body">
-                              <h5 class="card-title">Dog food</h5>
-                              <button class="btn btn-primary card-button">Buy Now</button>
+                              <h5 class="card-title">Dog food <br><hr> Price: 15,99 $ - 10kg</h5>
+                              <button class="btn card-button favorite-button" data-card-index="0">
+                                <i class="fa fa-heart" aria-hidden="true"></i> 
+                              </button>
+                              <button class="btn card-button add-to-cart-button" data-price="15.99" data-card-index="0">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              </button>
+                              
                           </div>
                       </div>
                   </div>
+
                   <div class="col-md-3">
                       <div class="card-carousel">
                           <img src="https://www.maxi-pet.ro/BinaryLibrary/777e6934-fad1-4192-be89-242e6e5989f1/Resized_eb3dbdd3-0fc7-4087-8ffd-6cc70e0dd22f/1600_1600.jpg" class="card-img-top" alt="Imagine 2">
                           <div class="card-body">
-                              <h5 class="card-title">Rabbit food</h5>
-                              <button class="btn btn-primary card-button">Buy Now</button>
+                              <h5 class="card-title">Rabbit food <br><hr> Price: 15,99 $ - 10kg</h5>
+                              <button class="btn card-button favorite-button" data-card-index="1">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                              </button>
+                              <button class="btn card-button add-to-cart-button" data-price="15.99" data-card-index="1">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              </button>
+                              
                           </div>
                       </div>
                   </div>
+
                   <div class="col-md-3">
                       <div class="card-carousel">
                           <img src="https://gomagcdn.ro/domains2/fourpaws.ro/files/product/original/club-4-paws-hrana-uscata-pisici-sterilizate-14kg-942254.jpg" class="card-img-top" alt="Imagine 3">
                           <div class="card-body">
-                              <h5 class="card-title">Cat food</h5>
-                              <button class="btn btn-primary card-button">Buy Now</button>
+                              <h5 class="card-title">Cat food <br><hr> Price: 15,99 $ - 10kg</h5>
+                              <button class="btn card-button favorite-button" data-card-index="2">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                              </button>
+                              <button class="btn card-button add-to-cart-button" data-price="15.99" data-card-index="2">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              </button>
+                              
+                             
+                              
                           </div>
                       </div>
                   </div>
+
                   <div class="col-md-3">
                       <div class="card-carousel">
                           <img src="https://m.media-amazon.com/images/I/71Lwt4snhJL.jpg" class="card-img-top" alt="Imagine 4">
                           <div class="card-body">
-                              <h5 class="card-title">Fish food</h5>
-                              <button class="btn btn-primary card-button">Buy Now</button>
+                              <h5 class="card-title">Fish food <br><hr> Price: 15,99 $ - 8kg</h5>
+                              <button class="btn card-button favorite-button" data-card-index="3">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                              </button>
+                              <button class="btn card-button add-to-cart-button" data-price="15.99" data-card-index="3">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              </button>
+                              
                           </div>
                       </div>
                   </div>
               </div>
           </div>
+
           <div class="carousel-item">
               <div class="row">
                   <div class="col-md-3">
                       <div class="card-carousel">
                           <img src="https://pentruanimale.ro/beta/files/product/original/CLUB-4-PAWS-Premium-Sensitive-Digestion-Pui-plic-hrana-umeda-pisici-sistem-digestiv-in-sos-80g-19217.jpeg" class="card-img-top" alt="Imagine 5">
                           <div class="card-body">
-                              <h5 class="card-title">Cat Nutrition</h5>
-                              <button class="btn btn-primary card-button">Buy Now</button>
+                              <h5 class="card-title">Cat Nutrition <br><hr> Price: 5,99 $ - 700g</h5>
+                              <button class="btn card-button favorite-button" data-card-index="4">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                              </button>
+                              <button class="btn card-button add-to-cart-button" data-price="5.99" data-card-index="4">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              </button>
+                              
                           </div>
                       </div>
                   </div>
@@ -166,8 +219,14 @@
                       <div class="card-carousel">
                           <img src="https://gomagcdn.ro/domains2/petpal.ro/files/product/large/club-4-paws-premium-selection-plic-caine-adult-talie-mica-bucati-de-vita-si-legume-in-sos-85g-537024.jpg" class="card-img-top" alt="Imagine 6">
                           <div class="card-body">
-                              <h5 class="card-title">Dog Nutrition</h5>
-                              <button class="btn btn-primary card-button">Buy Now</button>
+                              <h5 class="card-title">Dog Nutrition <br><hr> Price: 5,99 $ - 700g</h5>
+                              <button class="btn card-button favorite-button" data-card-index="5">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                              </button>
+                              <button class="btn card-button add-to-cart-button" data-price="5.99" data-card-index="5">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              </button>
+                              
                           </div>
                       </div>
                   </div>
@@ -175,17 +234,29 @@
                       <div class="card-carousel">
                           <img src="https://gomagcdn.ro/domains2/fourpaws.ro/files/product/original/recompense-pentru-pisici-club-4-paws-premium-stick-cu-somon-si-cod-5g-155-2352.png" class="card-img-top" alt="Imagine 7">
                           <div class="card-body">
-                              <h5 class="card-title">Bone Cat food</h5>
-                              <button class="btn btn-primary card-button">Buy Now</button>
-                          </div>
+                              <h5 class="card-title">Bone Cat food <br><hr> Price: 3,99 $ - 500g</h5>
+                              <button class="btn card-button favorite-button" data-card-index="6">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                              </button>
+                              <button class="btn card-button add-to-cart-button" data-price="3.99" data-card-index="6">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              </button>
+                              
+                            </div>
                       </div>
                   </div>
                   <div class="col-md-3">
                       <div class="card-carousel">
                           <img src="https://gomagcdn.ro/domains2/epetshop.ro/files/product/large/club-4-paws-premium-dental-stick-recompense-caini-0-117kg-804559.png" class="card-img-top" alt="Imagine 8">
                           <div class="card-body">
-                              <h5 class="card-title">Bone Dog food<span class="color1">│5$</span> </h5>
-                              <button class="btn btn-primary card-button">Buy Now</button>
+                              <h5 class="card-title">Bone Dog food <br><hr> Price: 3,99 $ - 500g</h5>
+                              <button class="btn card-button favorite-button" data-card-index="7">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                              </button>
+                              <button class="btn card-button add-to-cart-button" data-price="3.99" data-card-index="7">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              </button>
+
                           </div>
                       </div>
                   </div>
@@ -205,7 +276,7 @@
 
 
  
-
+<!-- Footer -->
 
 <div class="container-footer">
  
@@ -238,7 +309,6 @@
 
 
     <script src="index.js"></script>
-    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
