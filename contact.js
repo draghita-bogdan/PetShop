@@ -11,8 +11,15 @@ document
       event.preventDefault(); // Previne trimiterea formularului
 
       // Alerta
-      alert(
-        "Vă rugăm să completați toate câmpurile înainte de a trimite formularul."
-      );
+      alert("Please fill out all fields before submitting the form.");
     }
   });
+
+// Map
+document.addEventListener("DOMContentLoaded", function () {
+  var map = L.map("map").setView([45.77006557379909, 21.252267772023718], 10);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+  }).addTo(map);
+});

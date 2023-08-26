@@ -52,11 +52,10 @@ body {
   justify-content: first baseline;
 }
 
-
 /*Butoanele din Navbar*/
 
 .fa-heart {
-  color: #618583; 
+  color: #618583;
 }
 .fa-shopping-cart {
   color: #618583;
@@ -261,7 +260,6 @@ body {
   margin-top: 30px;
 }
 
-
 /*Carousel*/
 
 .bestseller {
@@ -318,12 +316,16 @@ body {
   object-fit: cover;
   height: 200px;
 }
+
+/*Butoane carousel*/
+
 .card-button {
   bottom: 10px;
   left: 50%;
   color: #274a49;
   background: none;
   transition: none !important;
+  padding-inline: 10px !important;
 }
 .card-button:hover {
   background-color: #c1c2a3;

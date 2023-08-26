@@ -10,7 +10,9 @@ buttons.forEach((button) => {
 
 function displayDataFromQueryParameter() {
   const params = new URLSearchParams(window.location.search);
-  const category = params.get("category") || "dog";
+  const categories = params.getAll("category");
+  const category =
+    categories.length > 0 ? categories.join(",") : "dog,cat,rabbit,fish";
 
   if (category) {
     fetchDataFor(category);
@@ -68,19 +70,22 @@ function createAnimalInfoElement(data) {
       nume: element.name,
       caracter: element.characteristics.temperament,
       locatie: element.locations[0],
-      imagine: element.image_url,
     };
     html += `
-    <div class="col-md-3 mb-4">
+ 
+    <div class="col-md-4">
     <div class="card custom-card">
-      <img src="${animalInfo.imagine}" class="card-img-top" alt="${animalInfo.nume}">
+    
       <div class="card-body">
         <h3 class="card-title">${animalInfo.nume}</h3>
         <p class="card-text">${animalInfo.caracter}</p>
         <p class="card-text">${animalInfo.locatie}</p>
+        <p class="card-text">Price: 150 USD</p> 
+        <button class="add-to-cart-btn" onclick="addToCart('${animalInfo.nume}')">Add to Cart</button>
       </div>
     </div>
   </div>
+ 
     `;
   });
 
@@ -111,4 +116,11 @@ addToCartButtons.forEach((button) => {
     cartProducts.push({ cardIndex, cardPrice });
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
   });
+});
+
+// Butonul "Let's chat"
+const chatButton = document.getElementById("chatButton");
+
+chatButton.addEventListener("click", function () {
+  window.location.href = "contact.html";
 });
