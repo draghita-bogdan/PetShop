@@ -154,3 +154,10 @@ paymentForm.addEventListener("submit", function (event) {
   paymentMessage.style.display = "block";
   paymentForm.reset();
 });
+
+
+
+
+
+
+
