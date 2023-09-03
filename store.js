@@ -1,3 +1,5 @@
+// Afisare carduri dupa banner
+
 let allCategoriesCardsHtml = "";
 
 function showBannerCategory(category) {
@@ -38,18 +40,41 @@ function showAllAnimalCategories(data, category) {
       nume: element.name,
       caracter: element.characteristics.temperament,
       locatie: element.locations[0],
-    
+      imagine: getAnimalImageURL(category),
     };
+    function getAnimalImageURL(category) {
+
+      // URL-ul imaginii corespunzătoare categoriei de animale
+
+      switch (category) {
+        case "dog":
+          return "./images/Untitled design (71).png"; 
+        case "cat":
+          return "./images/Untitled design (72).png"; 
+        case "rabbit":
+          return "./images/Untitled design (73).png"; 
+        case "fish":
+          return "./images/Untitled design (74).png"; 
+        default:
+          return "url_imagine_predefinita.jpg"; 
+      }
+    }
+    
+    const areTemperament = typeof element.characteristics.temperament !== 'undefined';
     allCategoriesCardsHtml += `
     <div class="col-md-4">
-    <div class="card custom-card">
+    <div class="card custom-card" data-card-id="${animalInfo.nume}">
     
       <div class="card-body">
+      <img src="${animalInfo.imagine}" alt="${animalInfo.nume}" class="card-img-top"> 
         <h3 class="card-title">${animalInfo.nume}</h3>
-        <p class="card-text">${animalInfo.caracter}</p>
+        ${areTemperament ? `<p class="card-text">${animalInfo.caracter}</p>` : ''}
+
         <p class="card-text">${animalInfo.locatie}</p>
         <p class="card-text"> Price: 150 USD</p> 
-        <button class="add-to-cart-btn" onclick="addToCart('${animalInfo.nume}')">Add to Cart</button>
+        <button class="api-cart-button" data-id="${
+          animalInfo.nume
+        }">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -139,3 +164,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.querySelector(".search-input");
   searchInput.addEventListener("input", searchAnimals); 
 });
+
+
+

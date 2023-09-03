@@ -156,8 +156,3 @@ paymentForm.addEventListener("submit", function (event) {
 });
 
 
-
-
-
-
-

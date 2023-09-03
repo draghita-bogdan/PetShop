@@ -71,21 +71,28 @@ function createAnimalInfoElement(data) {
       caracter: element.characteristics.temperament,
       locatie: element.locations[0],
     };
+
+    const areTemperament =
+      typeof element.characteristics.temperament !== "undefined";
+
     html += `
- 
-    <div class="col-md-4">
-    <div class="card custom-card">
-    
-      <div class="card-body">
-        <h3 class="card-title">${animalInfo.nume}</h3>
-        <p class="card-text">${animalInfo.caracter}</p>
-        <p class="card-text">${animalInfo.locatie}</p>
-        <p class="card-text">Price: 150 USD</p> 
-        <button class="add-to-cart-btn" onclick="addToCart('${animalInfo.nume}')">Add to Cart</button>
+      <div class="col-md-4">
+        <div class="card custom-card" data-card-id="${animalInfo.nume}">
+          <div class="card-body">
+         <h3 class="card-title">${animalInfo.nume}</h3>
+            ${
+              areTemperament
+                ? `<p class="card-text">${animalInfo.caracter}</p>`
+                : ""
+            }
+            <p class="card-text">${animalInfo.locatie}</p>
+            <p class="card-text">Price: 150 USD</p> 
+            <button class="api-cart-button" data-id="${
+              animalInfo.nume
+            }">Add to Cart</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
- 
     `;
   });
 
