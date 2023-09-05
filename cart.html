@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="cart.css">
+    <link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    
+</head>
+<body>
+
+   <!-- Navbar -->
+
+    <img class="bg-img" src="./images/Untitled design (59).png" alt="bg">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+     <div class="container"> 
+     <h1 class="logo">Lucky Paws</h1>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+       <ul class="navbar-nav ms-auto">
+         <li class="nav-item active">
+           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link " href="store.html">Store</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="contact.html">Contact Us</a>
+         </li>
+ 
+</ul>
+     </div>
+     </div>
+ </nav>
+
+
+
+ <!-- Background -->
+
+
+ <h1 class="cart">Bring joy home: <br>Furry Friends</h1> 
+    <div class="container">
+        
+
+       <!-- Cardurile adaugate in Cart -->
+
+<div class="row d-flex" id="cartContent">
+        
+ 
+ <!-- Suma totala -->
+
+     
+    </div>
+        <p>Total: <span id="cartTotal">0</span></p>
+    
+    </div>
+
+    <!-- Mesaj despre cosul de cumparaturi -->
+
+    <div id="emptyCartMessage" class="mt-3">
+        Your cart is empty.
+    </div>
+
+<!-- Formular de plata -->
+    
+    <form id="paymentForm" class="mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="cardNumber" class="form-label">Card Number</label>
+                    <input type="number" class="form-control" id="cardNumber" required minlength="14" maxlength="14">
+                </div>
+                <div class="mb-3">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="number" class="form-control" id="cvv" required minlength="3" maxlength="3">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="cardHolderName" class="form-label">Cardholder Name</label>
+                    <input type="text" class="form-control" id="cardHolderName" required minlength="5" maxlength="25">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="paymentTotal">Total to Pay:</label>
+            <p id="paymentTotal">0.00</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Pay</button>
+    </form>
+
+    <div id="paymentMessage" class="mt-3" style="display: none;">
+        <p>Thank you for your order!</p>
+    </div>
+</div>
+
+ <!-- Footer -->
+
+<div class="container-footer">
+ <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <h4 class="titlu-footer">About Us</h4>
+            <p class="paragraf-footer">Shop with us today and experience the joy of pampering your pets with <br>
+               Lucky Paws' exceptional products and exceptional service!</p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="titlu-footer">Contact</h4>
+            <p class="paragraf-footer">Email: luckypaws@yahoo.com</p>
+            <p class="paragraf-footer">Phone: (123) 456-7890</p>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="titlu-footer">Follow Us</h4>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+    <script src="cart.js"></script>
+   
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
