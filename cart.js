@@ -3,7 +3,12 @@
 const cartContent = document.getElementById("cartContent");
 const cartTotalElement = document.getElementById("cartTotal");
 const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+const cartAnimals =
+  JSON.parse(localStorage.getItem("cartAnimalsProducts")) || [];
 let cartTotal = 0;
+
+
+
 
 const cardsData = [
   {
@@ -65,6 +70,45 @@ cartProducts.forEach((product) => {
     cartContent.appendChild(card);
   }
 });
+
+cartAnimals.forEach((animal) => {
+  if (animal) {
+    const animalCard = document.createElement("div");
+    animalCard.classList.add("col-md-3", "mb-4", "custom-card");
+    animalCard.innerHTML = `
+    <div class="card">
+    <img src="${animal.imagine}" class="card-img-top" alt="Image">
+    <div class="card-body">
+        <h5 class="card-title">${animal.nume}</h5>
+        <button class="btn remove-animal-button" nume="${animal.nume}">Remove</button>
+    </div>
+</div>
+    `;
+    cartContent.appendChild(animalCard);
+  }
+});
+
+const removeAnimalButtons = document.querySelectorAll(".remove-animal-button");
+removeAnimalButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const numeAnimal = this.getAttribute("nume");
+    removeAnimalFromCart(numeAnimal);
+    this.closest(".card").remove(); // Eliminarea cardurilor
+    updateCartTotal(); // Actualizarea totalului
+  });
+});
+
+function removeAnimalFromCart(nume) {
+  const cartAnimals =
+    JSON.parse(localStorage.getItem("cartAnimalsProducts")) || [];
+  const indexToRemove = cartAnimals.findIndex((animal) => animal.nume === nume);
+  if (indexToRemove !== -1) {
+    cartAnimals.splice(indexToRemove, 1);
+    localStorage.setItem("cartAnimalsProducts", JSON.stringify(cartAnimals));
+    updateCartTotal(); // Actualizarea totalului dupa eliminarea produselor
+  }
+}
+
 console.log(emptyCartMessage);
 if (cartContent.innerHTML.trim() === "") {
   const emptyCartMessage = document.getElementById("emptyCartMessage");
@@ -154,5 +198,6 @@ paymentForm.addEventListener("submit", function (event) {
   paymentMessage.style.display = "block";
   paymentForm.reset();
 });
+
 
 

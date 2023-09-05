@@ -72,9 +72,9 @@ function showAllAnimalCategories(data, category) {
 
         <p class="card-text">${animalInfo.locatie}</p>
         <p class="card-text"> Price: 150 USD</p> 
-        <button class="api-cart-button" data-id="${
+        <button class="api-cart-button" onClick="addToCartAnimal('${
           animalInfo.nume
-        }">Add to Cart</button>
+        }', '${animalInfo.imagine}')">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -166,4 +166,8 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+function addToCartAnimal (nume,imagine) {
+  const cartProducts = JSON.parse(localStorage.getItem("cartAnimalsProducts")) || [];
+  cartProducts.push({nume, imagine});
+  localStorage.setItem("cartAnimalsProducts", JSON.stringify(cartProducts));
+}
