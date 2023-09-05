@@ -193,3 +193,24 @@ p {
 .remove-button:hover {
   background-color: #cddfde;
 }
+
+/* Stilizare butonul Remove pentru categorii */
+
+.remove-animal-button {
+  display: flex;
+  background-color: #618583;
+  color: white;
+  margin-left: 70px;
+  border: none;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #618583;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.remove-animal-button:hover {
+  background-color: #cddfde;
+}
