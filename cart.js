@@ -160,7 +160,7 @@ function updateCartTotal() {
 
   const emptyCartMessage = document.getElementById("emptyCartMessage");
   if (emptyCartMessage) {
-    if (cartProducts.length === 0) {
+    if (cartProducts.length === 0 && cartAnimals.length === 0) {
       emptyCartMessage.style.display = "block";
     } else {
       emptyCartMessage.style.display = "none";
